@@ -3,6 +3,16 @@
 @import "_variables";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background: $wtf;
@@ -31,7 +41,8 @@ textarea {
 }
 
 .buttons {
-  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
 
 }
 
