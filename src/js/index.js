@@ -6,20 +6,19 @@ const save = document.querySelector(".save--js");
 
 const load = document.querySelector(".load--js");
 
-const entry = localStorage.getItem("entry");
+const info = localStorage.getItem("entry");
 
-let result = "";
-
-if (entry) {
-  result = entry;
-}
-
-textArea.value = result;
-
-save.addEventListener("click", () => {
+save.addEventListener("click", (e) => {
+  e.preventDefault();
   localStorage.setItem("entry", textArea.value);
+  if (info) {
+    document.querySelector(".info--js").innerHTML = "ℹ";
+  } else {
+    document.querySelector(".info--js").innerHTML = "";
+  }
 });
 
-load.addEventListener("click", () => {
+load.addEventListener("click", (e) => {
+  e.preventDefault();
   textArea.value = localStorage.getItem("entry");
 });
