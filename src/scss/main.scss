@@ -48,23 +48,22 @@ h1 {
   &__buttons {
     display: flex;
     justify-content: flex-end;
+
+    & .save,
+    .load {
+      background: rgb(228, 228, 228);
+      margin-top: 20px;
+      border: solid 1px black;
+      font-size: 18px;
+      width: 80px;
+      padding: 4px 6px;
+      border-radius: 3px;
+    }
+
+    & .save {
+      margin-right: 34px;
+      background: rgb(40, 87, 158);
+      color: #fff;
+    }
   }
-}
-
-
-.save,
-.load {
-  background: rgb(228, 228, 228);
-  margin-top: 20px;
-  border: solid 1px black;
-  font-size: 18px;
-  width: 80px;
-  padding: 4px 6px;
-  border-radius: 3px;
-}
-
-.save {
-  margin-right: 34px;
-  background: rgb(40, 87, 158);
-  color: #fff;
 }
