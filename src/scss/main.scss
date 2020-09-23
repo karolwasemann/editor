@@ -34,18 +34,23 @@ h1 {
   align-self: center;
 }
 
-textarea {
-  box-sizing: border-box;
-  padding: 12px;
+.form {
   width: 100%;
-  border-radius: 3px;
+
+  &__text-area {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    width: 100%;
+    border-radius: 3px;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
-.buttons {
-  display: flex;
-  justify-content: flex-end;
-
-}
 
 .save,
 .load {
