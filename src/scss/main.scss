@@ -38,6 +38,7 @@ textarea {
   box-sizing: border-box;
   padding: 12px;
   width: 100%;
+  border-radius: 3px;
 }
 
 .buttons {
@@ -48,13 +49,17 @@ textarea {
 
 .save,
 .load {
-  background: rgb(211, 171, 171);
+  background: rgb(228, 228, 228);
   margin-top: 20px;
   border: solid 1px black;
   font-size: 18px;
   width: 80px;
+  padding: 4px 6px;
+  border-radius: 3px;
 }
 
 .save {
   margin-right: 34px;
+  background: rgb(40, 87, 158);
+  color: #fff;
 }
